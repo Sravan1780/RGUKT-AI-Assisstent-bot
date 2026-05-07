@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Bot response HTML styling */
+.bot-response h1,
+.bot-response h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #111827;
+}
+.bot-response h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.4rem 0;
+  color: #1f2937;
+}
+.bot-response p {
+  margin: 0.5rem 0;
+  line-height: 1.7;
+  color: #374151;
+  font-size: 0.95rem;
+}
+.bot-response ul,
+.bot-response ol {
+  margin: 0.5rem 0 0.5rem 1.25rem;
+}
+.bot-response li {
+  margin: 0.35rem 0;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.bot-response strong {
+  font-weight: 600;
+  color: #111827;
+}

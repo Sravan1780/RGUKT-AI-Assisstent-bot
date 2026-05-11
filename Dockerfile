@@ -11,8 +11,8 @@ RUN cd backend && pip install --no-cache-dir -r requirements.txt
 # Set working directory to backend so uvicorn can find the app module
 WORKDIR /app/backend
 
-# Expose port
-EXPOSE 8000
+# Build the vector database from PDF datasets
+RUN python rebuild_db.py
 
-# Start backend
-CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Start backend using Railway's PORT variable
+CMD python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}

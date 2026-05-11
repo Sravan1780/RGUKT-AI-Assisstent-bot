@@ -1,4 +1,4 @@
-const API_BASE = "/api";
+const API_BASE = "https://rgukt-ai-assisstent-bot-production.up.railway.app/api";
 
 /**
  * Send a chat message to the backend.
